@@ -1,7 +1,7 @@
 # profile
 name = 未定義
 tc = AUBOKQnlCo
-avatar = tanaka
+avatar = tanaka-2x
 roomID = MqfNXmMXFm
 
 lang = en-US

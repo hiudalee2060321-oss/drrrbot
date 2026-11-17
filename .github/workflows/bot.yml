@@ -13,21 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js and Python
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Inspect and Start Drrr Bot
-        run: |
-          ls -la
-          cat README_zh-CN.md || cat README.md || true
-          if [ -f "package.json" ]; then npm install; fi
-          if [ -f "requirements.txt" ]; then pip install -r requirements.txt; fi
-          if [ -f "bot.mjs" ]; then node bot.mjs;
-          elif [ -f "index.js" ]; then node index.js;
-          elif [ -f "bot.js" ]; then node bot.js;
-          elif [ -f "app.js" ]; then node app.js;
-          elif [ -f "main.py" ]; then python3 main.py;
-          elif [ -f "bot.py" ]; then python3 bot.py;
-          else npm start; fi
+      - name: Start Drrr Bot
+        run: node script/demo.mjs

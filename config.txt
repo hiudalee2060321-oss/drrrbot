@@ -1,8 +1,8 @@
 # profile
-name = test
-tc = mytc123
-avatar = setton
-roomID = UgaX0cBVAT
+name = 未定義
+tc = AUBOKQnlCo
+avatar = tanaka
+roomID = MqfNXmMXFm
 
 lang = en-US
 agent = Bot
